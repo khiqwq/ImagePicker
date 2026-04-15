@@ -1,35 +1,61 @@
-# 钉图 (ImagePicker)
+<div align="center">
 
-极简 Android 图片查看器 — 打开即选图，选完全屏显示，清后台重置。
+<img src="app/src/main/res/drawable/ic_launcher_foreground.xml" width="80" alt="icon" />
+
+# 钉图
+
+**极简 Android 图片查看器 — 选图、全屏、固定展示**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Android 15+](https://img.shields.io/badge/Android-15%2B-green.svg)](#环境要求)
 
 [English](README_EN.md)
+
+</div>
+
+---
 
 ## 功能
 
 - 打开应用 → 选择图片 → 全屏展示
 - 毛玻璃风格 UI
 - 检测 5 分钟内拍摄的照片，右下角智能推荐
-- 配合「应用固定」使用，展示图片时对方无法退出
-- 配合 [PinGuard](https://github.com/khiqwq/PinGuard) 使用，取消固定需指纹/密码验证
+- 配合「应用固定」，展示图片时对方无法退出
+- 配合 [PinGuard](https://github.com/khiqwq/PinGuard)，取消固定需指纹 / 密码验证
 
 ## 环境要求
 
-- Android 15+ (API 35+)
+- Android 15+（API 35+）
 - 目标设备：骁龙 8 Elite + Android 16
 
 ## 使用流程
 
-1. 打开钉图，选择要展示的图片
-2. 图片全屏显示，状态栏自动隐藏
-3. 点击右上角「📌 固定展示」启用应用固定
-4. 将手机交给对方，对方只能看到这张图片
-5. 清除后台即可重置
+```
+打开钉图 → 选择图片 → 全屏展示
+                        │
+                        ▼
+              点击「📌 固定展示」
+                        │
+                        ▼
+              手机交给对方查看
+              （无法退出应用）
+                        │
+                        ▼
+              清除后台即可重置
+```
 
 ## 技术栈
 
-- Kotlin + Jetpack Compose (Material3)
-- Coil 3 图片加载
-- Gradle Kotlin DSL + AGP 8.7
+| 组件 | 技术 |
+|------|------|
+| 语言 | Kotlin |
+| UI | Jetpack Compose + Material3 |
+| 图片加载 | Coil 3 |
+| 构建 | Gradle Kotlin DSL + AGP 8.7 |
+
+## 配套项目
+
+- [PinGuard](https://github.com/khiqwq/PinGuard) — LSPosed 模块，取消应用固定时要求指纹 / 密码验证
 
 ## 📄 许可证
 

@@ -1,8 +1,19 @@
+<div align="center">
+
+<img src="app/src/main/res/drawable/ic_launcher_foreground.xml" width="80" alt="icon" />
+
 # ImagePicker
 
-Minimal Android image viewer — open, pick, fullscreen display, clear to reset.
+**Minimal Android image viewer — pick, fullscreen, pin & display**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Android 15+](https://img.shields.io/badge/Android-15%2B-green.svg)](#requirements)
 
 [简体中文](README.md)
+
+</div>
+
+---
 
 ## Features
 
@@ -19,17 +30,32 @@ Minimal Android image viewer — open, pick, fullscreen display, clear to reset.
 
 ## Usage
 
-1. Open the app and select an image
-2. Image displays fullscreen with hidden status bar
-3. Tap "📌 Pin Display" to enable screen pinning
-4. Hand the phone over — they can only see the image
-5. Clear from recents to reset
+```
+Open app → Pick image → Fullscreen display
+                            │
+                            ▼
+                  Tap "📌 Pin Display"
+                            │
+                            ▼
+                  Hand phone to viewer
+                  (can't exit the app)
+                            │
+                            ▼
+                  Clear from recents to reset
+```
 
 ## Tech Stack
 
-- Kotlin + Jetpack Compose (Material3)
-- Coil 3 image loading
-- Gradle Kotlin DSL + AGP 8.7
+| Component | Technology |
+|-----------|-----------|
+| Language | Kotlin |
+| UI | Jetpack Compose + Material3 |
+| Image Loading | Coil 3 |
+| Build | Gradle Kotlin DSL + AGP 8.7 |
+
+## Related
+
+- [PinGuard](https://github.com/khiqwq/PinGuard) — LSPosed module for biometric-protected screen unpin
 
 ## 📄 License
 
